@@ -1,9 +1,56 @@
-object pepita {
-  var energy = 100
+object rojo{
+  method esFuerte() = true
+}
 
-  method energy() = energy
+object verde{
+  method esFuerte() = true
+}
 
-  method fly(minutes) {
-    energy = energy - minutes * 3
+object celeste{
+  method esFuerte() = false
+}
+
+object pardo{
+  method esFuerte() = false
+}
+
+object cobre{
+  method esBrillante() = true
+}
+
+object lino {
+  method esBrillante() = false 
+}
+
+object remera{
+  method color() = rojo
+  method material() = lino
+  method peso() = 800 
+}
+
+object Rosa {
+  method leGusta(algo){
+    return algo.peso() <= 2000
   }
 }
+Rosa.leGusta(remera)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
